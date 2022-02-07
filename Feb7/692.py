@@ -3,7 +3,6 @@
 # 8 = 2**3
 # 16 = 2**4
 
-
 N = int(input())
 
 if N % 2 == 0:
@@ -11,3 +10,4 @@ if N % 2 == 0:
 else: 
     print("NO")
 
+# not solved

@@ -12,3 +12,5 @@ for i in range (0,k):
     m = int(x.split(' ')[1])
     d = 19 * m + (n + 239) * (n + 366) // 2
     print (d)
+
+    
