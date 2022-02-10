@@ -1,13 +1,14 @@
+
 N = int(input())
+p = 1
 
-while N > 1:
+while p < N:
 
-    if N % 2 != 0:
-        print ("NO")
-        break
-    else:
-        N = N // 2
-        
-    if N == 1: 
-        print ("YES")
-    
+    p *=2
+
+if p == N:
+    print ("YES")
+
+else:
+    print("NO")
+
