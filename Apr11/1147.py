@@ -12,14 +12,3 @@ if (ord(input) >=65 ) and (ord(input)<91):
 elif (ord(input) >=97 ) and (ord(input)<123):
     print(chr(ord(input)-32))
 
-#option2
-
-""" 
-symb = input()
-dictEng = "abcdefghijklmnopqrstuvwxyz"
-dictEngUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-if symb in dictEng:
-    print(dictEngUp[dictEng.index(symb)])
-else:
-    print(symb)  """
