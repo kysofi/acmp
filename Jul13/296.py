@@ -11,5 +11,4 @@ while num%5 !=0:
 
 kot = num //5 
 
-
 print (kot, lisa)
