@@ -14,6 +14,7 @@ for run in range(N-1):
             money[i], money[i+1]=money[i+1],money[i]
 
 for j in range (N):
-    gorgona=(gorgona+money[j])/2
+    if gorgona < money[j]:
+        gorgona=(gorgona+money[j])/2
 
-print("{0:.6f}".format(gorgona))
+print ("%.6f" % (gorgona))
