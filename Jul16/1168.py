@@ -19,7 +19,8 @@ for run in range (N-1):
 for run in range (N-1):
     for j in range (0,N-1-run):
         if A[j][4]== A[j+1][4]:
-            A[j],A[j+1]=A[j+1],A[j]
+            if A[j][0]< A[j+1][0]:
+                A[j],A[j+1]=A[j+1],A[j]
 
 last_winner = []
 for i in range (M):
