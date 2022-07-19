@@ -1,5 +1,8 @@
+import random
+
 a = list(map(int,input().split()))
 array = []
+
 for i in range(len(a)):
     array.append (int(a[i]))
 
@@ -9,7 +12,9 @@ def quicksort(array):
     greater = []
 
     if len (array) > 1:
-        pivot = array[0]
+
+        pivot = random.choice(array)
+
         for x in array:
             if x < pivot:
                 less.append(x)
@@ -18,7 +23,7 @@ def quicksort(array):
             elif x > pivot:
                 greater.append(x)
         
-        return quicksort(less)+ equal + quicksort (greater)
+        return quicksort(less)+ equal + quicksort(greater)
     
     else: 
         return array
