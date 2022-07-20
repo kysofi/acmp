@@ -1,11 +1,5 @@
 import random
 
-a = list(map(int,input().split()))
-array = []
-
-for i in range(len(a)):
-    array.append (int(a[i]))
-
 def quicksort(array):
     less = []
     equal = []
@@ -28,4 +22,3 @@ def quicksort(array):
     else: 
         return array
 
-print (quicksort(array))
