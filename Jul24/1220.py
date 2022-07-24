@@ -5,20 +5,18 @@ K = int(input())
 if K == 0: 
     nums = nums
 
-if abs(K)>N:
-    if K < 0:
-        K = (K%N) * (-1)
-    else:
-        K = K%N
+if K < 0:
+    K = ((-K) % N) * -1
+else:
+    K = K % N
 
 if K > 0: 
-    answer = nums[-K:] + nums[:(N-K)]
+    nums = nums[-K:] + nums[:(N-K)]
 
 if K < 0:
-    K = abs(K)
-    answer = nums[-(N-K):] + nums[:K]
+    nums = nums[abs(K):] + nums[:abs(K)]
 
-print(*answer)
+print(*nums)
 
 """ 
 if K > 0: 
