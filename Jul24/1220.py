@@ -11,14 +11,24 @@ else:
     K = K % N
 
 if K > 0: 
-    nums = nums[-K:] + nums[:(N-K)]
+    nums = nums[-K:] + nums[:-K]
+
+    # nums[-K:] ==> последние три
+    
+    # nums[:(N-K)] ==> первые два 
 
 if K < 0:
     nums = nums[abs(K):] + nums[:abs(K)]
 
+    # nums[abs(K):] ==> последние два
+
+    # nums[:abs(K)] ==> первые три
+
+    # [start:stop]
+
 print(*nums)
 
-""" 
+"""
 if K > 0: 
     for i in range(K):
         nums.insert(0,nums.pop(-1))
@@ -28,4 +38,6 @@ if K < 0:
     for i in range(abs(K)):
         nums.append(nums.pop(0))
         # pop first, append to the end
+
+
 """
