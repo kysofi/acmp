@@ -11,16 +11,6 @@ def get(i):  # this
     print(nums[(int(i)-1)])
     return nums
 
-def update(i,j,k):
-    for z in range ((int(i)-1),int(j)):
-        nums[z] = (int(k))
-    return nums
-
-def add(i,j,k):
-    for z in range ((int(i)-1),int(j)):
-        nums[z] += (int(k))
-    return nums
-
 def rsq(i,j): # this
     sum = 0
     for z in range ((int(i)-1),int(j)):
@@ -34,7 +24,17 @@ def rmq(i,j): # this
         minimum=min(nums[z],minimum)
     print(minimum)
     return nums
-    
+
+def update(i,j,k):
+    for z in range ((int(i)-1),int(j)):
+        nums[z] = (int(k))
+    return nums
+
+def add(i,j,k):
+    for z in range ((int(i)-1),int(j)):
+        nums[z] += (int(k))
+    return nums
+
 for num in range(M):
 
     if operations[num][0]=='get':
